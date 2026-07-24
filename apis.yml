@@ -1,7 +1,24 @@
 aid: blue-wire
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/blue-wire.png
 name: Blue Wire
-description: Blue Wire is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Blue Wire is a podcast network and monetization platform built for independent sports
+  content creators, positioning itself as "The Monetization Engine for Sports Creators." The company
+  provides sales, marketing, distribution, and operational support so creators can focus on producing
+  content while Blue Wire handles ad sales and sponsorship coordination across a network of 200+ shows
+  and 500+ creators reaching hundreds of millions of listeners. Backed by 500 Global. Blue Wire operates
+  as a media and advertising business and does not publish a public developer API; this profile captures
+  its company identity and domain-security posture within the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/blue-wire/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Podcasting
+- Media
+- Sports
+- Advertising
+- Monetization
+- Content Creators
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/blue-wire-domain-security.yml
 - type: Website
   url: https://bluewirepods.com
+- type: Support
+  url: https://bluewirepods.com/contact
+- type: TermsOfService
+  url: https://bluewirepods.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://bluewirepods.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
