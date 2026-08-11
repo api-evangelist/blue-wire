@@ -1,0 +1,52 @@
+generated: '2026-08-10'
+method: probed
+source: live HTTP probes of the bluewirepods.com host
+host: https://bluewirepods.com
+note: >-
+  Every /.well-known/ path probed returned 404. The apex host is a Webflow-published
+  marketing site; it answers all /.well-known/* requests with an 88-byte HTML page
+  reading "Invalid .well-known request", which is a platform catch-all and not a
+  document. No WellKnown or SecurityTxt pointer is emitted for this repo because the
+  provider serves none of these surfaces. A recorded absence, not a presence.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+- path: /.well-known/agent-card.json
+  status: 404
+  file: null
+- path: /.well-known/agent.json
+  status: 404
+  file: null
+hosts_probed:
+- host: bluewirepods.com
+  resolves: true
+- host: www.bluewirepods.com
+  resolves: true
+- host: api.bluewirepods.com
+  resolves: false
+  dns: NXDOMAIN
+- host: developer.bluewirepods.com
+  resolves: false
+  dns: NXDOMAIN
+- host: docs.bluewirepods.com
+  resolves: false
+  dns: NXDOMAIN
+- host: app.bluewirepods.com
+  resolves: false
+  dns: NXDOMAIN
+- host: studio.bluewirepods.com
+  resolves: false
+  dns: NXDOMAIN

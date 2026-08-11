@@ -1,0 +1,20 @@
+generated: '2026-08-10'
+method: searched
+source: https://bluewirepods.com/
+limit_count: 0
+rate_limits: []
+headers: []
+note: >-
+  No rate limits are documented because Blue Wire publishes no API. There is no developer
+  portal, API reference, or machine-readable contract on bluewirepods.com, and no
+  api./developer./docs. subdomain resolves, so there is no runtime surface that could
+  return X-RateLimit-*, RateLimit-* or Retry-After headers. limit_count is an honest zero
+  recorded after a real search, not an omission. No `RateLimits` pointer is wired into
+  apis.yml — a file documenting an absence must not be advertised as a served surface.
+evidence:
+- url: https://bluewirepods.com/developers
+  status: 404
+- url: https://bluewirepods.com/api
+  status: 404
+- url: https://bluewirepods.com/docs
+  status: 404

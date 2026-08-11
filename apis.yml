@@ -28,7 +28,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-08-10'
 tags:
 - Company
 - Podcasting
@@ -54,8 +54,29 @@ common:
   url: https://bluewirepods.com/terms-of-service
 - type: PrivacyPolicy
   url: https://bluewirepods.com/privacy-policy
+- type: Blog
+  url: https://bluewirepods.com/news
+- type: LLMsTxt
+  url: llms/blue-wire-llms.txt
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-10'
+  status: minimal
+  artifacts_added: 4
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Blue Wire sells podcast advertising inventory and creator services from a
+    Webflow-published marketing site; the 430-URL sitemap contains only posts, shows,
+    team and jobs pages, and api./developer./docs.bluewirepods.com are all NXDOMAIN.
+  evidence:
+  - url: https://bluewirepods.com/developers
+    status: 404
+  - url: https://bluewirepods.com/openapi.json
+    status: 404
+  - url: https://bluewirepods.com/.well-known/agent-card.json
+    status: 404
+  - url: https://bluewirepods.com/sitemap.xml
+    status: 200
+  checked: '2026-08-10'

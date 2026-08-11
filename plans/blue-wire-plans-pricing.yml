@@ -1,0 +1,22 @@
+generated: '2026-08-10'
+method: searched
+source: https://bluewirepods.com/advertise
+plan_count: 0
+plans: []
+note: >-
+  Blue Wire publishes no API plans or developer pricing because it publishes no API.
+  https://bluewirepods.com/pricing returns 404. The only commercial surfaces on the site
+  are /advertise (a brand/advertiser contact form for podcast sponsorship inventory) and
+  /partner (a creator application to join the network) — both are sales-conversation
+  intake forms with no published rates, tiers, quotas, or overage terms. The company sells
+  advertising inventory and creator services, not API access, so there is nothing to
+  record here. plan_count is an honest zero, not an un-attempted search. No `Plans`
+  pointer is wired into apis.yml — same rule as the well-known probe: a file documenting
+  an absence must not be advertised as a surface the provider serves.
+evidence:
+- url: https://bluewirepods.com/pricing
+  status: 404
+- url: https://bluewirepods.com/advertise
+  status: 200
+- url: https://bluewirepods.com/partner
+  status: 200
